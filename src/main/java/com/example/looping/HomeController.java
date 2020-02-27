@@ -49,6 +49,7 @@ public class HomeController {
 
 
     @PostMapping("/process")
+    // the process is not a destination...
     public String processForm(@Valid Job job, BindingResult result){
         if (result.hasErrors()){
             return "jobform";
